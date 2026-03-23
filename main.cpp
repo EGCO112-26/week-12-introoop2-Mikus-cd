@@ -1,21 +1,25 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 #include "student.h"
-#define N 3
 int main(int argc, char* argv[]) {
-  student s1,s2;
-
+  int N = (argc-1)/2;
   student a[N];
+  
+  if(N<1){
+    return 0;
+  }
+
+for(int i=0;i<N;i++){
+  a[i].set_name(argv[i*2+1]);
+  a[i].set_age(stoi(argv[i*2+2]));
+}
   // Set age and set name for the first two ppl
   int i,age,youngest,temp;
   string n;
    // 1. Ask for N names and N age using cin
-  for(i=0;i<N;i++){
-    cout<<"Student "<<i+1<<endl;
-    a[i].get_name();
-    a[i].get_age();
-  }
 
   //2. Print name and age of all N ppl
   for(i=0;i<N;i++){
@@ -43,10 +47,8 @@ int main(int argc, char* argv[]) {
  }
   
   // Print all info for the yougest person
- 
-  
-  
   //4. Change input from cin to argv
+
 
   
  return 0;

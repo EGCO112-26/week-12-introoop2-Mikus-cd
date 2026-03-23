@@ -34,7 +34,7 @@ public:
     }
 
     void student::print_name(){
-      cout<<"Name:"<<name<<endl;
+      cout<<"Name: "<<name<<endl;
     }
     string student::get_name(){
         cout<<"Input your name:";
@@ -42,7 +42,7 @@ public:
         return name;
     
     }void student::print_age(){
-        cout<<"age:"<<age<<endl;
+        cout<<"age: "<<age<<endl;
     }
     int student::show_age(){
         return age;

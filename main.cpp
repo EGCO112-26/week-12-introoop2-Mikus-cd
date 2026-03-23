@@ -22,11 +22,7 @@ for(int i=0;i<N;i++){
    // 1. Ask for N names and N age using cin
 
   //2. Print name and age of all N ppl
-  for(i=0;i<N;i++){
-    a[i].print_name();
-    a[i].print_age();
-
-  }
+  
   
   
   //3. Print name and age of 

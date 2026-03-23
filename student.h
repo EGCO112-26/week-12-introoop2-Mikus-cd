@@ -42,7 +42,7 @@ public:
         return name;
     
     }void student::print_age(){
-        cout<<"age: "<<age<<endl;
+        cout<<"Age: "<<age<<endl;
     }
     int student::show_age(){
         return age;
